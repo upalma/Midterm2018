@@ -13,7 +13,7 @@ public class MakePyramid {
                          * * * * * *
 
         */
-int level = 30;
+int level = 20;
 for (int i =0; i<level; i++){
     for (int j=0; j<level-i; j++) {
         System.out.print(" ");
