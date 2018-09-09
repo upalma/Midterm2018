@@ -22,12 +22,21 @@ public class DataReader {
 		 */
 		FileReader file = null;
 		BufferedReader reader = null;
-		String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
+		//String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
+		String fileLocation = "/Users/palmauzzal/Midterm/MidtermJuly2018/src/data/self-driving-car.txt";
 
-try{
-
-}
-
+		try{
+			file = new FileReader(fileLocation);
+			} catch (Exception ex){
+				System.out.println("File is not found");
+			}
+			try{
+				reader = new BufferedReader(file);
+			String data = " ";
+				while ((data =reader.readLine()) != null);
+			System.out.println(data);
+			}catch (Exception ex){
+		System.out.println("File is not readable, please check the link again again");
+		}
 	}
-
 }

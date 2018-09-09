@@ -4,21 +4,30 @@ What is programing language?
 A.
 What jdk contains or composed of and define each components?
 What is IDE?
-A:
+A.Integrated Development Environment
 What are the IDEs available in the market to support java?
 Explain the entire java life cycle.
 what is class?
-A: Class is blue print of object
+A. Class is blue print of object
 What is object?
-A:Object is is a
+A. Object is an instance of a class
 What is the entry point of an application?
+A. Main method
 Why main is static?
+A.
 Which class is the superclass of all classes?
 What is difference between path and classpath variables?
 What is the difference between an Interface and Abstract class?
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
 what is Access Specifier?
+A. Access Specifire is the keyword that set the accessibility to the class, method and object to others
 What is OOP ? Define each feature of java OOP.
+A. Object oriented programming.
+There are 4 types of feathures of OOP
+1. Inheritance
+2. Abstraction
+3. Encapsulation
+4. Polymorphism
 What is Java Package and which package is imported by default?
 What is API? Name list of API that you have used so far.
 Does java support multiple inheritance, explain why or why not?

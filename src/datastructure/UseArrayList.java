@@ -13,7 +13,6 @@ public class UseArrayList {
 		 * Store all the sorted data into one of the databases.
 		 *
 		 */
-
 		List<String> list = new ArrayList<>();
 		list.add("North");
 		list.add("South");
@@ -27,11 +26,17 @@ public class UseArrayList {
 		}
 
 		System.out.println(" ");
+
 		Iterator it = list.iterator();
 		while (it.hasNext()) {
 			System.out.println(it.next());
 		}
 
+		System.out.println(" ");
+		list.remove(2);
+		System.out.println(list);
+
+		System.out.println(list.get(list.size()-1));
 	}
 
 }
