@@ -25,7 +25,6 @@ public class Sort {
             array[j] = temp;
         }
 
-
         final long endTime = System.currentTimeMillis();
         final long executionTime = endTime - startTime;
         this.executionTime = executionTime;
@@ -100,14 +99,13 @@ public class Sort {
     public int[] heapSort(int[] array) {
         final long startTime = System.currentTimeMillis();
         int [] list = array;
-
+        //implement here
 
         final long endTime = System.currentTimeMillis();
         final long executionTime = endTime - startTime;
         this.executionTime = executionTime;
         return list;
     }
-
 
     public int[] bucketSort(int[] array) {
         final long startTime = System.currentTimeMillis();
@@ -132,7 +130,6 @@ public class Sort {
         this.executionTime = executionTime;
         return list;
     }
-
 
     public int[] redixSort(int[] array) {
         final long startTime = System.currentTimeMillis();

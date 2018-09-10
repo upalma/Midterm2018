@@ -11,8 +11,11 @@ How is an Array different from Linked List?
 what is queue?
 what is stack?
 what is FIFO and LIFO?
+A. FIFO: First in first out
+LIFO: Last in first out
 what is the order of complexity?
 what is the best case to search an element from an array?
+A. Selection sort
 what is the worst case to search an element from an array?
 what is tree in data structure?
 what is graph in data structure?

@@ -20,22 +20,24 @@ public class DataReader {
 		 * Demonstrate how to use Stack that includes push,peek,search,pop elements.
 		 * Use For Each loop/while loop/Iterator to retrieve data.
 		 */
+		//String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car";
 		FileReader file = null;
 		BufferedReader reader = null;
-		String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
 
+		String textFile = "/Users/palmauzzal/Midterm/MidtermJuly2018/src/data/self-driving-car";
 		try{
-			file = new FileReader(textFile);
-			} catch (Exception ex){
+			file =new FileReader(textFile);
+			System.out.println("Your file has been found");
+			} catch (Exception e){
 				System.out.println("File is not found");
 			}
-			try{
-				reader = new BufferedReader(file);
-				String data = " ";
-				while ((data =reader.readLine())!=null);
+			try{reader = new BufferedReader(file);
+				String data ="";
+				while ((data =reader.readLine())!=null){
 				System.out.println(data);
+			}
 			}catch (Exception ex){
-				System.out.println("File is not readable, please check the link again again");
+			System.out.println("File is not readable, please check the link again again");
 		}
 	}
 }
