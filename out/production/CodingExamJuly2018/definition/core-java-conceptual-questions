@@ -1,26 +1,31 @@
 Please answer the below core-java Questions:
 
 What is programing language?
-A.
+A.A programming language is a set of commands, instructions, and other syntax which use to create a computing task
 What jdk contains or composed of and define each components?
 What is IDE?
-A.Integrated Development Environment
+A.Integrated Development Environment (IDE) is a software application
 What are the IDEs available in the market to support java?
+A. Popular IDEs in the markets are: 1) IntelliJ IDEA, 2) NetBeans, 3) Eclipse, 4) Codenvy, 5) DrJava, 6) BlueJ, 7) JGrasp
 Explain the entire java life cycle.
+A. Start writing source code using IDE, source code converted in to byte code using javac compiler. Byte code is in the form of ‘.class’. then the class file loads to JVM using java loader. JVM send the out put to the operating system and finally operating system gives the out put to the end user
 what is class?
-A. Class is blue print of object
+A. Class is the blue print of a object
 What is object?
 A. Object is an instance of a class
 What is the entry point of an application?
 A. Main method
 Why main is static?
-A.
+A.Java program's main method is static because keyword static allows main to call the class without creating an object which the main method is defined. If we omit static keyword before main Java program will successfully compile but it won't execute
 Which class is the superclass of all classes?
+A. Object class
 What is difference between path and classpath variables?
+A.
 What is the difference between an Interface and Abstract class?
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+A. No, we can not. A concrete class implement the Interface and override the method. A concrete class also extends the Abtract class override the unimplemented method
 what is Access Specifier?
-A. Access Specifire is the keyword that set the accessibility to the class, method and object to others
+A. Access Specifier / modifiers are keywords that set the accessibility of classes, methods, and other members
 What is OOP ? Define each feature of java OOP.
 A. Object oriented programming.
 There are 4 types of feathures of OOP
@@ -40,11 +45,14 @@ What is a constructor ?
 Can we have multiple constructors in a class?
 If we don't have a constructor declared, what is called during the object creation?
 What is "this" keyword in java ?
+A.
 What is "super" keyword in java? How many possible way can you use?
 What is JVM stand for ?
+A. Java Virtual Machine
 Is JVM platform independent?
 What version of java are you using?
 What is JAR stand for ?
+A. Java Archive
 What is the difference between JDK and JVM?
 What is the difference between JVM and JRE?
 What is compile time and run time?
