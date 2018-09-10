@@ -1,7 +1,7 @@
 package algorithm;
 
 import databases.ConnectToSqlDB;
-
+import java.lang.*;
 import java.util.List;
 import java.util.Random;
 
@@ -34,8 +34,8 @@ public class Numbers {
         connectToSqlDB.insertDataFromArrayToSqlTable(num, "selection_sort", "SortingNumbers");
         List<String> numbers = connectToSqlDB.readDataBase("selection_sort", "SortingNumbers");
         printValue(numbers);
-		int n = num.length;
-		randomize (num, n);
+//		int n = num.length;
+//		randomize (num, n);
 
 		//Insertion Sort
 		algo.insertionSort(num);
@@ -124,16 +124,16 @@ public class Numbers {
 	public static void storeRandomNumbers(int [] num){
 		Random rand = new Random();
 		for(int i=0; i<num.length; i++){
-			num[i] = rand.nextInt(100);
+			num[i] = rand.nextInt(1000000);
 		}
 	}
 
-	public static void randomize( int arr[], int n)
+	public static void randomize( int arr[], int a)
 	{
 		Random r = new Random();
 		// Start from the last element and swap one by one. We don't
 		// need to run for the first element that's why i > 0
-		for (int i = n-1; i > 0; i--) {
+		for (int i = a-1; i > 0; i--) {
 			int j = r.nextInt(i);
 			int temp = arr[i];
 			arr[i] = arr[j];

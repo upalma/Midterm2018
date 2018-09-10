@@ -1,5 +1,6 @@
 package datastructure;
 
+import java.sql.SQLOutput;
 import java.util.*;
 
 public class UseMap {
@@ -41,7 +42,12 @@ public class UseMap {
 		for (Map.Entry entry: map.entrySet()){
 			System.out.println(entry.getKey()+"->>"+ entry.getValue());
 		}
-
+		System.out.println("Using Iterator below ");
+ Iterator<Map.Entry<String, List<String>>> iterator = map.entrySet().iterator();
+		while (iterator.hasNext()){
+			Map.Entry<String, List<String>> entry = iterator.next();
+			System.out.println(entry.getKey() +"-->"+entry.getValue());
+		}
 	}
 
 }

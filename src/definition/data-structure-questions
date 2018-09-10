@@ -7,8 +7,6 @@ A.In order to locate and retrieve  data it is required to have data in a structu
 retrieval and manipulation easy.
 
 
-
-
 What are the various operations that can be performed on different Data Structures?
 
 A.1. Searching
@@ -22,9 +20,6 @@ A.1. Searching
             5. Merging
 
             6. Traversing
-
-
-
 
 List out the areas in which data structures are applied extensively?
 
@@ -44,16 +39,11 @@ A.Compiler Design,
 
             7. Simulation
 
-
-
-
 what is an Array?
 
 A.An array in programming is a collection of data/value which has index associated with it.An array shall contain similar
 
 types of data, an array can be sorted or un sorted.
-
-
 
 
 what is the difference between the Array and ArrayList?
@@ -67,16 +57,11 @@ A. 1. Array length if fixed but arraylist is dynamic.
        3. Array can store primitive variables and objects but arraylist can store oly Objects.
 
 
-
-
 what is LinkedList?
 
 A.A linked list is linear data Structure where each element is a separate object which is called node. Each node has
 
 data and reference to the next node. Last node has reference to null.
-
-
-
 
 How is an Array different from Linked List?
 
@@ -101,13 +86,9 @@ what is queue?
 A.It is a linear data structure where elements can be accessed  ob the basis of FIFO.
 
 
-
-
 what is stack?
 
 A.Stack is linear data structure where elements can be accessed on the basis of LIFO.
-
-
 
 
 what is FIFO and LIFO?
@@ -117,26 +98,17 @@ A.FIFO: First in first out. Example: In Queue data can be accessed by FIFO metho
 In Stack elements can be accessed on the basis of LIFO.
 
 
-
-
 what is the order of complexity?
 
 A.For input is of size N, we can say that the algorithm will finish at O(1), O(N), O(N^2), O(N^3), O(N*log(N)) etc.
-
-
-
 
 what is the best case to search an element from an array?
 
 A.Best case - you find it (assuming you only need to find one) on the first comparison.
 
-
-
-
 what is the worst case to search an element from an array?
 
 A.
-
 
 
 
@@ -149,8 +121,6 @@ It can be empty of nodes or a tree can be a structure consisting of one node cal
 sub-trees.
 
 
-
-
 what is graph in data structure?
 
 A.It is a non-linear data structure that has nodes and edges. The nodes also referred to as vertices and the edges are
@@ -158,8 +128,6 @@ A.It is a non-linear data structure that has nodes and edges. The nodes also ref
 lines or arcs that connects the two nodes inside the graph. Simply put a graph contains finite set of vertices and set
 
 of edges which connect a pair of nodes.
-
-
 
 
 what is the difference between the HashTable and HashMap?
@@ -171,15 +139,11 @@ because unsynchronized Objects perform better than synchronized objects. HashTab
 where as HashMap does allow one null key and unlimited null values.
 
 
-
-
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
 
 A.The pertinent data structures that are used, for RDBMS is Array, for example Array of structures. Regarding network
 
 data model, graph is used and for hierarchical data model, trees are used.
-
-
 
 
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
@@ -193,8 +157,6 @@ IndexOutOfBounds Exception. It is a Runtime Exception occurs during runtime, JVC
 the compilation of a program.
 
 
-
-
 How HashMap works in java?
 
 A.HashMap is a class that is used for storing keys and value pairs.It is the process of converting an object into
@@ -204,16 +166,11 @@ integer form by using the method hashCode(),therefore it is cirtical to write ha
 performance of HashMap.
 
 
-
-
 What are the different ways of copying an array into another array?
 
 A.The multiple ways to copying elements of an array into another array are: to copy Manually,Arrays.copyOf(),
 
 System.arraycopy(), Object.clone(), and Arrays.copyOfRange().
-
-
-
 
 What is difference between an array and a linked list?
 
@@ -224,8 +181,6 @@ However, a linked list memory is assigned when data is added to it which means a
 elements having same data type with common name.Linkedlist is an ordered collection of elements which are connected by
 
 links and pointers.
-
-
 
 
 What is DFS and BFS?
@@ -239,16 +194,11 @@ is much better about space than BFS,however, it may find a subpar solution. Mean
 one vertex to another then we may find the suboptimal solution and it should suffice.
 
 
-
-
 What is Recursion?
 
 A.It is the process where a method calls itself directly or indirectly is known as recursion so the corresponding
 
 function is called as recursive function.
-
-
-
 
 What are linear and non linear data Structures?
 
@@ -256,16 +206,11 @@ A.If data items are not organized then it is called non linear data structure. C
 
 in linear data structure where items are organized
 
-
-
-
 What is Big-(O)-notation?
 
 A.It is the language that we use to determine how long an algorithm will take to run; this is how we compare the
 
 efficacy of multiple approaches to solving a problem.
-
-
 
 
 Outlined different kind of sorting algorithm with time complexity?

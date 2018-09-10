@@ -89,6 +89,24 @@ public class Sort {
         int[] list = array;
         //implement here
 
+        int a=0;
+        int b=0;
+        int i = a, j = b;
+        int temp;
+        int pivot = array[(a + b) / 2];
+        while (i <= j) {
+            while (array[i] < pivot)
+                i++;
+            while (array[j] > pivot)
+                j--;
+            if (i <= j) {
+                temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+                i++;
+                j--;
+            }
+        }
 
         final long endTime = System.currentTimeMillis();
         final long executionTime = endTime - startTime;
