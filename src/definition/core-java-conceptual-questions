@@ -45,11 +45,14 @@ What is a constructor ?
 Can we have multiple constructors in a class?
 If we don't have a constructor declared, what is called during the object creation?
 What is "this" keyword in java ?
+A.
 What is "super" keyword in java? How many possible way can you use?
 What is JVM stand for ?
+A. Java Virtual Machine
 Is JVM platform independent?
 What version of java are you using?
 What is JAR stand for ?
+A. Java Archive
 What is the difference between JDK and JVM?
 What is the difference between JVM and JRE?
 What is compile time and run time?
