@@ -36,8 +36,16 @@ public class Sort {
         final long startTime = System.currentTimeMillis();
         int[] list = array;
         //implement here
-
-
+        int temp;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = i; j > 0; j--) {
+                if (array[j] < array[j - 1]) {
+                    temp = array[j];
+                    array[j] = array[j - 1];
+                    array[j - 1] = temp;
+                }
+            }
+        }
         final long endTime = System.currentTimeMillis();
         final long executionTime = endTime - startTime;
         this.executionTime = executionTime;
@@ -48,8 +56,15 @@ public class Sort {
         final long startTime = System.currentTimeMillis();
         int[] list = array;
         //implement here
-
-
+        for (int i = 0; i < list.length; i++) {
+            for (int j = 0; j < list.length - 1; j++) {
+                if (list[j] > list[j + 1]) {
+                    int temp = list[j];
+                    list[j] = list[j + 1];
+                    list[j + 1] = temp;
+                }
+            }
+        }
         final long endTime = System.currentTimeMillis();
         final long executionTime = endTime - startTime;
         this.executionTime = executionTime;
@@ -84,8 +99,7 @@ public class Sort {
 
     public int[] heapSort(int[] array) {
         final long startTime = System.currentTimeMillis();
-        int[] list = array;
-        //implement here
+        int [] list = array;
 
 
         final long endTime = System.currentTimeMillis();

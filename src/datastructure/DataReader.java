@@ -32,7 +32,7 @@ public class DataReader {
 			try{
 				reader = new BufferedReader(file);
 				String data = " ";
-				while ((data =reader.readLine()) != null);
+				while ((data =reader.readLine())!=null);
 				System.out.println(data);
 			}catch (Exception ex){
 				System.out.println("File is not readable, please check the link again again");
