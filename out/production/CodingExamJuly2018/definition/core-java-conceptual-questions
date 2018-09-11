@@ -51,46 +51,36 @@ A.The static keyword denotes that a member variable, or method, can be accessed 
 of the class to which it belongs. when static key word is used with a method that method can be called without creating
 a object.
 
-
 What is final and how it has been used variables and methods?
 A.final class cannot be subclassed. A final variable can only be initialized once.A final method cannot be overridden
 by subclasses.
-
 
 What is final, finally and finalize?
 A.Final is used to apply restrictions on class, method and variable. Final class can't be inherited, final method can't
 be overridden and final variable value can't be changed.Finally is used to place important code, it will be executed
 whether exception is handled or not.Finalize is used to perform clean up processing just before object is garbage collected.
 
-
 What is a constructor ?
 A.Constructor is being used to instantiate a object by using new operator. It is an instance method with the same name
 of their class.
 
-
 Can we have multiple constructors in a class?
 A.Yes we can.
-
 
 If we don't have a constructor declared, what is called during the object creation?
 A.The default constructor.
 
-
 What is "this" keyword in java ?
 A."this" keyword is a reference variable that refers to the current object.
-
 
 What is "super" keyword in java? How many possible way can you use?
 A.super key word used for accessing the members of the super class by the extended class.
 
-
 What is JVM stand for ?
 A.Java Virtual Machine.
 
-
 Is JVM platform independent?
 A.Yes
-
 
 What version of java are you using?
 A.java 10.0.2 2018-07-17
