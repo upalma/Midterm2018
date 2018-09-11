@@ -4,15 +4,21 @@ What is programing language?
 A.A programming language is a set of commands, instructions, and other syntax which use to create a computing task
 
 What jdk contains or composed of and define each components?
+A. The Java Development Kit (JDK) is a software development environment used for developing Java applications and
+   applets.It includes the Java Runtime Environment (JRE),an interpreter/loader (java), a compiler (javac),
+   an archiver (jar), a documentation generator (javadoc) and other tools needed in Java development.
 
 What is IDE?
 A.Integrated Development Environment (IDE) is a software application
 
 What are the IDEs available in the market to support java?
-A. Popular IDEs in the markets are: 1) IntelliJ IDEA, 2) NetBeans, 3) Eclipse, 4) Codenvy, 5) DrJava, 6) BlueJ, 7) JGrasp
+A. Popular IDEs in the markets are: 1) IntelliJ IDEA, 2) NetBeans, 3) Eclipse, 4) Codenvy, 5) DrJava, 6) BlueJ,
+7) JGrasp
 
 Explain the entire java life cycle.
-A. Start writing source code using IDE, source code converted in to byte code using javac compiler. Byte code is in the form of ‘.class’. then the class file loads to JVM using java loader. JVM send the out put to the operating system and finally operating system gives the out put to the end user
+A. Start writing source code using IDE, source code converted in to byte code using javac compiler. Byte code is in
+the form of ‘.class’. then the class file loads to JVM using java loader. JVM send the out put to the operating system
+and finally operating system gives the out put to the end user
 
 what is class?
 A. Class is the blue print of a object
@@ -24,16 +30,30 @@ What is the entry point of an application?
 A. Main method
 
 Why main is static?
-A.Java program's main method is static because keyword static allows main to call the class without creating an object which the main method is defined. If we omit static keyword before main Java program will successfully compile but it won't execute
+A.Java program's main method is static because keyword static allows main to call the class without creating an object
+which the main method is defined. If we omit static keyword before main Java program will successfully compile but it
+won't execute
+
 Which class is the superclass of all classes?
 A. Object class
+
 What is difference between path and classpath variables?
-A.
+A.The main difference between PATH and CLASSPATH is that  PATH is an environment variable which is used to locate JDK
+  binaries like "java" or "javac" command used to run java program and compile java source file.On the other hand,
+  CLASSPATH, an environment variable is used by System or Application ClassLoader to locate and load compile Java
+  bytecodes stored in the .
+
 What is the difference between an Interface and Abstract class?
+A. Interface have all abstract method declared only, no method body, Abstract class can have Abstract and non Abstract
+method.
+
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
-A. No, we can not. A concrete class implement the Interface and override the method. A concrete class also extends the Abtract class override the unimplemented method
+A. No, we can not. A concrete class implement the Interface and override the method. A concrete class also extends
+the Abtract class override the unimplemented method
+
 what is Access Specifier?
 A. Access Specifier / modifiers are keywords that set the accessibility of classes, methods, and other members
+
 What is OOP ? Define each feature of java OOP.
 A. Object oriented programming.
 There are 4 types of feathures of OOP
@@ -41,11 +61,28 @@ There are 4 types of feathures of OOP
 2. Abstraction
 3. Encapsulation
 4. Polymorphism
+
 What is Java Package and which package is imported by default?
+A. A Name Space, similar to a folder,  a package keeps a set of related classes and interfaces organized.
+Java.lang package is imported by default.
+
 What is API? Name list of API that you have used so far.
+A. Application Programming Interface
+
 Does java support multiple inheritance, explain why or why not?
+A.No. If there are methods with same signature in both the super class and subclass problems can occur determining
+which method is being called.
+
 What is method overloading and when it happens?
+A. Method Overloading is a feature that allows a class to have more than one method having the same name, if their
+argument lists are different. It happens in compile time.
+
 Explain exceptions in java and how to handle it.
+A. A exceptions is a problem that arises during the execution of a program. When an Exception occurs the normal
+flow of the program is disrupted and the program/Application terminates abnormally. Java provides two different
+options to handle an exception. We can either use the try-catch-finally approach to handle all kinds of exceptions.
+Or you can use the try-with-resource approach which allows an easier cleanup process for resources.
+
 What is static keyword in java? How it has been used in variables and methods ?
 A.The static keyword denotes that a member variable, or method, can be accessed without creating an instantiation
 of the class to which it belongs. when static key word is used with a method that method can be called without creating
@@ -56,9 +93,10 @@ A.final class cannot be subclassed. A final variable can only be initialized onc
 by subclasses.
 
 What is final, finally and finalize?
-A.Final is used to apply restrictions on class, method and variable. Final class can't be inherited, final method can't
-be overridden and final variable value can't be changed.Finally is used to place important code, it will be executed
-whether exception is handled or not.Finalize is used to perform clean up processing just before object is garbage collected.
+A.Final is used to apply restrictions on class, method and variable. Final class can't be inherited, final method
+can't be overridden and final variable value can't be changed.Finally is used to place important code, it will be
+executed whether exception is handled or not.Finalize is used to perform clean up processing just before object
+is garbage collected.
 
 What is a constructor ?
 A.Constructor is being used to instantiate a object by using new operator. It is an instance method with the same name
@@ -84,7 +122,6 @@ A.Yes
 
 What version of java are you using?
 A.java 10.0.2 2018-07-17
-
 
 What is JAR stand for ?
 A. Java Archive file
@@ -123,7 +160,7 @@ What is Serialization and Deserialization?
 A.Serialization is a process of converting an object into a sequence of bytes.The reverse process of creating object
 from sequence of bytes is called deserialization.
 
-when to use transient variable in java?
+When to use transient variable in java?
 A.When we do not want the variable serialized.
 
 Difference between while and do..while loop?
@@ -167,7 +204,7 @@ while heap memory is used to store objects in Java.
 What is reflection in java and why is it useful?
 A.Reflection is an API which is used to examine or modify the behavior of methods, classes, interfaces at runtime.
 
-what is multithreading in java?
+What is multithreading in java?
 A.Multithreading is a Java feature that allows concurrent execution of two or more parts of a program for maximum
 utilization of CPU.Each part of such program is called a thread. So, threads are light-weight processes within a process.
 
@@ -189,7 +226,8 @@ What are the dependencies for this project?
 A.Dependencies define in which order project tasks and activities should be carried out.
 
 what is dependency injection in java?
-A.when a class is created using the new operator, the class isgit dependant on the parent class. New injects the dependency.
+A.when a class is created using the new operator, the class isgit dependant on the parent class. New injects
+the dependency.
 
 What is static binding and dynamic binding?
 A.static occurs during compile time, dynamic during run time.
