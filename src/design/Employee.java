@@ -23,4 +23,13 @@ public interface Employee {
 	//employee benefit
 	public void benefitLayout();
 
+	//employee's Job Title
+	public void jobTitle();
+
+	//employee's Religion
+	public void religion();
+
+	//employee's Job Title
+	public void country();
+
 }

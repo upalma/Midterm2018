@@ -2,7 +2,7 @@ package design;
 
 import java.util.Scanner;
 
-public class EmployeeInfo {
+public class EmployeeInfo extends EmployeeAbstract implements Employee{
 	
  /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
  * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
@@ -20,8 +20,16 @@ public class EmployeeInfo {
 	/*
 	 * declare few static and final fields and some non-static fields
 	 */
+
 	static String companyName;
-	
+	static private int employeeId;
+	String employeeName;
+	String departamentName;
+	String employeeJobTitle;
+	double salary;
+	double performance;
+	String employeeReligion;
+	String employeeCountry;
 	/*
 	 * You must implement the logic for below 2 methods and 
 	 * following 2 methods are prototype as well for other methods need to be design,
@@ -32,13 +40,72 @@ public class EmployeeInfo {
 	 * you must have multiple constructor.
 	 * Must implement below constructor.
 	 */
+	public EmployeeInfo(){}
+
 	public EmployeeInfo(int employeeId){
-		
+		this.employeeId = employeeId;
 	}
-    public EmployeeInfo(String name, int employeeId){
-		
+    public EmployeeInfo(String employeeName, int employeeId){
+		this.employeeName = employeeName;
+		this.employeeId = employeeId;
 	}
-	
+	public EmployeeInfo(double salary, double performance){
+		this.salary = salary;
+		this.performance = performance;
+	}
+	public EmployeeInfo(String employeeReligion, String employeeCountry, String departamentName, String employeeJobTitle){
+		this.departamentName = departamentName;
+		this.employeeJobTitle = employeeJobTitle;
+		this.employeeReligion = employeeReligion;
+		this.employeeCountry = employeeCountry;
+
+	}
+
+	@Override
+	public int employeeId() {
+		return 0;
+	}
+
+	@Override
+	public String employeeName() {
+		return null;
+	}
+
+	@Override
+	public void assignDepartment() {
+		System.out.println("Mr. John William assigned to IT department");
+	}
+
+	@Override
+	public int calculateSalary() {
+		return 0;
+	}
+
+	@Override
+	public void benefitLayout() {
+
+	}
+
+	@Override
+	public void jobTitle() {
+
+	}
+
+	@Override
+	public void religion() {
+		System.out.println("Mr. John William is a Jewish");
+	}
+
+	@Override
+	public void country() {
+		System.out.println();
+	}
+
+	@Override
+	public void employeeJoiningDate() {
+		System.out.println("");
+	}
+
 	/*
 	 * This methods should calculate Employee bonus based on salary and performance.
 	 * Then it will return the total yearly bonus. So you need to implement the logic.
