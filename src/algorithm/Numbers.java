@@ -21,7 +21,7 @@ public class Numbers {
 	 */
 
 	public static void main(String[] args) throws Exception {
-		
+		Sort algo = new Sort();
 		int [] num = new int[100000];
 		storeRandomNumbers(num);
 		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
@@ -29,7 +29,7 @@ public class Numbers {
 		randomize (num, n);
 
 		//Selection Sort
-		Sort algo = new Sort();
+
 		algo.selectionSort(num);
 		long selectionSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of "+ num.length + " numbers in Selection Sort take: " + selectionSortExecutionTime + " milli sec");
@@ -74,7 +74,7 @@ public class Numbers {
 
 
 		//Heap Sort
-		algo.heapSort(num);
+		algo.heapSort(num,100000);
 		long heapSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of "+ num.length + " numbers in Heap Sort take: " + heapSortExecutionTime + " milli sec");
 //		connectToSqlDB.insertDataFromArrayToSqlTable(num, "heap_sort", "SortingNumbers");
@@ -83,7 +83,7 @@ public class Numbers {
 
 
 		//Bucket Sort
-		algo.bucketSort(num);
+		algo.bubbleSort(num);
 		long bucketSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of "+ num.length + " numbers in Bucket Sort take: " + bucketSortExecutionTime + " milli sec");
 //		connectToSqlDB.insertDataFromArrayToSqlTable(num, "bucket_sort", "SortingNumbers");
@@ -114,7 +114,7 @@ public class Numbers {
 	public static void storeRandomNumbers(int [] num){
 		Random rand = new Random();
 		for(int i=0; i<num.length; i++){
-			num[i] = rand.nextInt(100);
+			num[i] = rand.nextInt(1000);
 		}
 	}
 

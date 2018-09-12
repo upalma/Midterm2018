@@ -106,6 +106,18 @@ public class EmployeeInfo extends EmployeeAbstract implements Employee{
 		System.out.println("");
 	}
 
+	@Override
+	public void displayEmployeeInfo() {
+
+	}
+
+	public void displayEmployeeInfo(String companyName, int employeeId, String employeeName, String departamentName, String employeeJobTitle, double salary, double performance, String employeeReligion, String employeeCountry) {
+		this.employeeName = employeeName;
+		this.employeeId = employeeId;
+		this.companyName = companyName;
+		this.departamentName = departamentName;
+	}
+
 	/*
 	 * This methods should calculate Employee bonus based on salary and performance.
 	 * Then it will return the total yearly bonus. So you need to implement the logic.
